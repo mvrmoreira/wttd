@@ -17,7 +17,7 @@ class SubscriptTest(TestCase):
     def testHtml(self):
         'Html must contain input controls'
         self.assertContains(self.response, '<form')
-        self.assertContains(self.response, '<input', 6)
+        self.assertContains(self.response, '<input', 5)
         self.assertContains(self.response, 'type="text"', 3)
         self.assertContains(self.response, 'type="email"')
         self.assertContains(self.response, 'type="submit"')
