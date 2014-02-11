@@ -34,4 +34,4 @@ class SubscriptTest(TestCase):
     def testFormHasFields(self):
         'Form must have 4 fields.'
         form = self.response.context['form']
-        self.assertItemsEqual(['nome', 'email', 'cpf', 'telefone'], form.fields)
+        self.assertItemsEqual(['name', 'email', 'cpf', 'phone'], form.fields)
