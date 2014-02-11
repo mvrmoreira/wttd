@@ -1,3 +1,7 @@
+# coding: utf-8
 from django.shortcuts import render
+from eventex.subscriptions.forms import SubscriptionForm
 
-# Create your views here.
+
+def subscribe(request):
+    return render(request, 'subscriptions/subscription_form.html', {'form': SubscriptionForm()})
