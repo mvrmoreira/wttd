@@ -30,8 +30,3 @@ class SubscriptTest(TestCase):
         'Context must have the subscription form.'
         form = self.response.context['form']
         self.assertIsInstance(form, SubscriptionForm)
-
-    def testFormHasFields(self):
-        'Form must have 4 fields.'
-        form = self.response.context['form']
-        self.assertItemsEqual(['name', 'email', 'cpf', 'phone'], form.fields)
