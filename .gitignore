@@ -11,3 +11,6 @@ Scripts
 *~
 *.sqlite3
 .DS_Store
+.env
+eventex/staticfiles/
+.idea/
