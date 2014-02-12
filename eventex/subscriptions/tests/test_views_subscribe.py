@@ -51,6 +51,7 @@ class SubscribePostTest(TestCase):
         'Valid POST must be saved.'
         self.assertTrue(Subscription.objects.exists())
 
+
 class SubscribeInvalidPostTest(TestCase):
     def setUp(self):
         data = dict(
