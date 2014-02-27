@@ -27,6 +27,11 @@ class SubscriptFormTest(TestCase):
         form = self.make_validated_form(email='')
         self.assertFalse(form.errors)
 
+    def test_name_must_be_capitalized(self):
+        'Name must be capitalized.'
+        form = self.make_validated_form(name='MATHEUS moreira')
+        self.assertEqual('Matheus Moreira', form.cleaned_data['name'])
+
     def make_validated_form(self, **kwargs):
         data = dict(name='Matheus Moreira', email='matheus@moreira.com', cpf='01234567890', phone='21-96186180')
         data.update(kwargs)
