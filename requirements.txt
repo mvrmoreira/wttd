@@ -7,3 +7,4 @@ psycopg2==2.5.1
 django-decouple==2.1
 pytz
 South==0.8.4
+mock==1.0.1
