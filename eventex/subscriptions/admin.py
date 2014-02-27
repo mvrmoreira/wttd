@@ -21,6 +21,7 @@ class SubscriptionAdmin(admin.ModelAdmin):
     def mark_as_paid(self, request, queryset):
         count = queryset.update(paid=True)
 
+        # TODO: corrigir palavra inscricao
         msg = ungettext(
             u'%d inscricao foi marcada como paga.',
             u'%d inscricao foram marcadas como pagas.',
