@@ -1,4 +1,4 @@
-# condig: utf-8
+# coding: utf-8
 from django.utils.timezone import now
 from django.utils.translation import ungettext, ugettext as _
 from django.contrib import admin
