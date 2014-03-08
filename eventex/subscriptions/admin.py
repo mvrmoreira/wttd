@@ -23,8 +23,8 @@ class SubscriptionAdmin(admin.ModelAdmin):
 
         # TODO: corrigir palavra inscricao
         msg = ungettext(
-            u'%d inscricao foi marcada como paga.',
-            u'%d inscricao foram marcadas como pagas.',
+            u'%d inscrição foi marcada como paga.',
+            u'%d inscrição foram marcadas como pagas.',
             count
         )
         self.message_user(request, msg % count)
