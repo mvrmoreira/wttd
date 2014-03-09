@@ -6,6 +6,7 @@
 
 <form action="." method="POST" role="form">
     {% csrf_token %}
+    {{ form.non_field_errors }}
 
     <div class="form-group">
         <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
