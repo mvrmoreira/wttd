@@ -1,6 +1,7 @@
 # coding: utf-8
 from django.test import TestCase
 from eventex.core.models import Talk
+from eventex.core.managers import PeriodManager
 
 
 class TalkModelTest(TestCase):
@@ -25,3 +26,7 @@ class TalkModelTest(TestCase):
 			url='http://gilbrother.com'
 		)
 		self.assertEqual(1, self.talk.speakers.count())
+
+	def test_period_manager(self):
+		'Talk default manager must be instance of PeriodManager.'
+		self.assertIsInstance(Talk.objects, PeriodManager)
