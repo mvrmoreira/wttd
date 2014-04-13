@@ -20,4 +20,4 @@ def talk_list(request):
 	return render(request, 'core/talk_list.html', context)
 
 
-# parei na página 119
+# parei na página 174
